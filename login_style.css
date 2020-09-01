@@ -1,0 +1,16 @@
+h1 {
+    color: black;
+    text-align: center;
+    size: 180px;
+    background-color:rgb(227, 240, 202);
+    width: 100%;
+  }
+.login{
+    text-align: center;
+    background-color:rgb(126, 62, 117);
+    width: 100%;
+}
+div > a{
+  color: black;
+  
+}
