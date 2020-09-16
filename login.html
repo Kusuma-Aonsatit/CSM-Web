@@ -6,16 +6,36 @@
     </head>
     <meta charset="UTF-8">
     <body>
-        <h1>Welcome</h1>
+        <head>
+            <div class="nav">
+                <ul>
+                    <li class="Solutions"><a href="#">Solutions</a></li>
+                    <li class="Site"><a href="#">Site Reference</a></li>
+                    <li class="Abou"><a href="#">About Us</a>
+                       <ul>
+                           <li class="Who"><a href="#">Who We Are</a></li>
+                           <li class="Team"><a href="#">Our Team</a></li>
+                       </ul>                    
+                    </li>
+                    <li class="Contact"><a href="#">Contact Us</a></li>
+                    <li class="Repairing"><a href="#">Repairing</a></li>
+                    <li class="Schedule"><a href="#">Schedule</a></li>
+                </ul>
+            </div>
+        </head>
+
         <div class="login">
             <label>Username</label><br>
             <input type="text" id="username" name="username"><br><br>
             <label>Password</label><br>
             <input type="password" id="pwd" name="pwd"><br><br>
-            <input type="submit" name="btnSubmit" value="Login"><br>
+            <input type="checkbox" id="spwd" name="show password">
+            <label>Show Password</label>
+            <input type="checkbox" id="keepme" name="keep me loggin">
+            <label>Keep me login</label><br><br>
+            <input type="submit" name="btnSubmit" value="Login"><br><br>
             <a href="/GitHub/CSM-Web/sign_in.html">Don't have an account?</a> &nbsp;&nbsp;
             <a href="/GitHub/CSM-Web/reset_password.html">Forget Password</a>
-        </div>
-
+        </div>/
     </body>
 </html>
