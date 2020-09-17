@@ -1,21 +1,31 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #ebc7be;
-  }
+  margin: 0;
+  padding: 0;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 .nav ul{
   list-style: none;
-  background-color: #F5FADF;
+  background-color: #f2f2f2;
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
+.nav img{
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 30px;
+
+}
+
 .nav li{
   font-size: 1.2em;
   line-height: 40px;
-  text-align: left;
+  text-align: center;
 }
 
 .nav li li{
@@ -28,56 +38,93 @@ body {
   color: #000;
   display: block;
   padding-left: 15px;
-  border-bottom: 1px solid #888;
+  border-bottom: 1px solid #f2f2f2;
   transition: .3s;
 }
 
 .nav a:hover{
-  background-color: #005f5f;
+  background-color: #666666;
+}
+/* Sub Menu*/
+
+.nav li ul{
+  position: absolute;
+  display: none;
+  width: 150px;
+}
+
+.nav li:hover ul{
+  display: block;
+  background-color:#f2f2f2;
 }
 
 /* Style menu for Larger screens*/
 
 @media screen and (min-width: 1000px){
-  .nav li{
-    width: 160px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-    display: inline-block;
-    margin-right: -8px;
-  }
+.nav li{
+  width: 160px;
+  border-bottom: none;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  display: inline-block;
+  margin-right: -8px;
+}
 
-  .nav a{
-    border-bottom: none;
-  }
+.nav a{
+  border-bottom: none;
+}
 
-  .nav > ul > li{
-    text-align: center;
-  }
+.nav > ul > li{
+  text-align: center;
+}
 
-  .nav > ul > li > a{
-    padding: 0;
-  }
+.nav > ul > li > a{
+  padding: 0;
+}
+.nav > ul > li:first-child{
+display: none;
+}
+
+.nav img{
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 30px;
+  text-align: center;
+  content: center;
+  border-bottom: none;
+  font-size: 1em;
+} 
 
 /* Sub Menu*/
 
-  .nav li ul{
-    position: absolute;
-    display: none;
-    width: inherit;
-  }
+.nav li ul{
+  position: absolute;
+  display: none;
+  width: inherit;
+}
 
-  .nav li:hover ul{
-    display: block;
-  }
+.nav li:hover ul{
+  display: block;
+}
+.nav li ul li{
+  display: block;
+}
+
 }
 
 /*Login Form*/
 
-  .login{
-    background-color: ivory;
-    text-align: center;
+.login{
+  text-align: center;
+}
 
-  }
+.login{
+  border: 2px solid black;
+  margin-top: 12%;
+  margin-bottom: 15%px;
+  margin-right: 35%;
+  margin-left: 35%;
+  background-color: #e6e6e6;
+}
